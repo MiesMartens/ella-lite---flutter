@@ -13,7 +13,7 @@ class AppTheme {
     textTheme: AppTheme.textTheme,
   );
 
-  static Color appColor = HexColorNew('#e17494');
+  static Color appColor = HexColorNew('#eb76a3');
   static Color lightAppColor = HexColorNew('#1985fb');
   static Color secondaryAppColorDarkBlue = HexColorNew('#082b6e');
   static Color lightSecondaryAppColorDarkBlue = HexColorNew('#20407b');
