@@ -40,6 +40,7 @@ dependencies:
   animate_do: ^4.1.1
   cached_network_image: ^3.4.1
   get: ^4.7.2
+  interactive_slider: ^0.5.1
 
 dev_dependencies:
   flutter_test:

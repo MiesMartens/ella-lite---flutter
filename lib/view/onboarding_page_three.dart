@@ -1,7 +1,9 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
+import '../controllers/onboarding_controller.dart';
 import '../core/app_theme.dart';
 import '../widget/button.dart';
 import '../widget/diet_card.dart';
@@ -10,6 +12,8 @@ class PageThreeOnboarding extends StatelessWidget {
   PageThreeOnboarding({
     super.key,
   });
+
+  OnboardingController onboardingController = Get.find<OnboardingController>();
 
   var allergies = [
     // {
@@ -80,6 +84,8 @@ class PageThreeOnboarding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Padding(
           padding: const EdgeInsets.only(bottom: 14),
@@ -104,6 +110,7 @@ class PageThreeOnboarding extends StatelessWidget {
             children: [
               for (int i = 0; i < allergies.length; i++)
                 DietCard(
+                  clickable: true,
                   data: allergies[i],
                 )
             ],
@@ -142,7 +149,9 @@ class PageThreeOnboarding extends StatelessWidget {
         AppTheme.height(40),
 
         CustomButton(
-          onTap: () {},
+          onTap: () {
+            onboardingController.nextPage();
+          },
           child: Row(
             children: [
               Text(

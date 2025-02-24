@@ -19,19 +19,17 @@ class AppTheme {
   static Color lightSecondaryAppColorDarkBlue = HexColorNew('#20407b');
   static Color secondaryAppColorDarkBlack = HexColorNew('#202020');
   static Color lightSecondaryAppColorDarkBlack = HexColorNew('#393939');
-  static Color lightBackgroundColor = HexColorNew('#f1f1f1');
+  static Color lightBackgroundColor = HexColorNew('#f6f6f4');
   static Color buttonIconColor = HexColorNew("#6D6D6D");
   static Color buttonColor = HexColorNew('#1a1a1a');
-  static  Color darkText = HexColorNew('#646464');
-  static  Color darkerText = HexColorNew('#030303');
-  static  Color lightText = HexColorNew('#95979b');
+  static Color darkText = HexColorNew('#646464');
+  static Color darkerText = HexColorNew('#030303');
+  static Color lightText = HexColorNew('#95979b');
   static Color deactivatedText = HexColorNew("#ededed");
   static const String fontName = 'Outfit';
 
-  static const TextStyle buttonText = TextStyle(
-      fontFamily: 'Outfit',
-      fontSize: 24,
-      color: Colors.white);
+  static const TextStyle buttonText =
+      TextStyle(fontFamily: 'Outfit', fontSize: 24, color: Colors.white);
 
   static TextTheme textTheme = TextTheme(
     headlineLarge: heading,
@@ -42,7 +40,7 @@ class AppTheme {
     bodySmall: smallText,
   );
 
-  static  TextStyle heading = TextStyle(
+  static TextStyle heading = TextStyle(
       color: AppTheme.darkerText,
       fontWeight: FontWeight.bold,
       overflow: TextOverflow.fade,
@@ -51,7 +49,7 @@ class AppTheme {
       letterSpacing: -0.2,
       fontFamily: fontName);
 
-  static  TextStyle heading2 = TextStyle(
+  static TextStyle heading2 = TextStyle(
       color: AppTheme.darkerText,
       fontWeight: FontWeight.w600,
       overflow: TextOverflow.fade,
@@ -59,14 +57,14 @@ class AppTheme {
       letterSpacing: -0.2,
       fontFamily: fontName);
 
-  static  TextStyle heading3 = TextStyle(
+  static TextStyle heading3 = TextStyle(
       color: AppTheme.darkerText,
       fontWeight: FontWeight.w600,
       fontSize: 16,
       decorationThickness: 0.1,
       fontFamily: fontName);
 
-  static  TextStyle subheading = TextStyle(
+  static TextStyle subheading = TextStyle(
       color: AppTheme.darkerText,
       fontWeight: FontWeight.w500,
       overflow: TextOverflow.fade,
@@ -74,7 +72,7 @@ class AppTheme {
       letterSpacing: -0.2,
       fontFamily: fontName);
 
-  static  TextStyle subheading2 = TextStyle(
+  static TextStyle subheading2 = TextStyle(
       color: AppTheme.darkerText,
       fontWeight: FontWeight.w600,
       overflow: TextOverflow.fade,
@@ -83,14 +81,14 @@ class AppTheme {
       height: 1.1,
       fontFamily: fontName);
 
-  static  TextStyle subheading3 = TextStyle(
+  static TextStyle subheading3 = TextStyle(
       color: AppTheme.darkerText,
       fontWeight: FontWeight.w600,
       overflow: TextOverflow.fade,
       fontSize: 14,
       fontFamily: fontName);
 
-  static  TextStyle smallText = TextStyle(
+  static TextStyle smallText = TextStyle(
       color: AppTheme.lightText,
       fontWeight: FontWeight.normal,
       fontSize: 12,

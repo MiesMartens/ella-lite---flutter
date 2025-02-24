@@ -8,16 +8,17 @@ import '../core/app_theme.dart';
 import '../widget/button.dart';
 
 class PageOneOnboarding extends StatelessWidget {
-   PageOneOnboarding({
+  PageOneOnboarding({
     super.key,
   });
 
-  OnboardingController onboardingController =
-      Get.find<OnboardingController>();
+  OnboardingController onboardingController = Get.find<OnboardingController>();
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Stack(
           alignment: Alignment.bottomLeft,
@@ -26,8 +27,7 @@ class PageOneOnboarding extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 14),
               child: Text(
                 "Your personal\nDe-bloating App",
-                style:
-                    AppTheme.heading.copyWith(fontSize: 34),
+                style: AppTheme.heading.copyWith(fontSize: 34),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -40,10 +40,10 @@ class PageOneOnboarding extends StatelessWidget {
           style: AppTheme.smallText,
         ),
         AppTheme.height(40),
-    
+
         CustomButton(
           onTap: () {
-           onboardingController.nextPage();
+            onboardingController.nextPage();
           },
           child: Row(
             children: [
@@ -82,13 +82,12 @@ class PageOneOnboarding extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(50),
-                border: Border.all(
-                    color: AppTheme.appColor, width: 2),
+                border: Border.all(color: AppTheme.appColor, width: 2),
               ),
               child: Center(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                      vertical: 16, horizontal: 24),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
                   child: Text(
                     "I already have an Account",
                     style: AppTheme.subheading2.copyWith(
