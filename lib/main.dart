@@ -1,6 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:ella_lite/core/app_theme.dart';
 import 'package:ella_lite/view/home_screen.dart';
+import 'package:ella_lite/view/mobile/home_screen_mobile.dart';
 import 'package:ella_lite/view/mobile/landing_page_mobile.dart';
 
 import 'package:get/get.dart';
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: LandingPageMobile(),
+      home: HomeScreenMobile(),
     );
   }
 }

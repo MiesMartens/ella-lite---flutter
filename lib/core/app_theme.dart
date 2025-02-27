@@ -66,7 +66,7 @@ class AppTheme {
 
   static TextStyle subheading = TextStyle(
       color: AppTheme.darkerText,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w600,
       overflow: TextOverflow.fade,
       fontSize: 24,
       letterSpacing: -0.2,
