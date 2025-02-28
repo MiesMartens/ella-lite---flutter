@@ -52,6 +52,7 @@ class PageSixOnboardingMobile extends StatelessWidget {
                 children: [
                   Expanded(
                     child: CustomTextField(
+                      style: AppTheme.heading3,
                       hintText: "First Name*",
                       icon: Icons.person,
                       validator: (v) {},
@@ -62,6 +63,7 @@ class PageSixOnboardingMobile extends StatelessWidget {
                   Expanded(
                     child: CustomTextField(
                       hintText: "Last Name",
+                      style: AppTheme.heading3,
                       icon: Icons.person,
                       validator: (v) {},
                       nameController: TextEditingController(),
@@ -74,11 +76,13 @@ class PageSixOnboardingMobile extends StatelessWidget {
                 hintText: "Email*",
                 icon: CupertinoIcons.mail_solid,
                 validator: (v) {},
+                style: AppTheme.heading3,
                 nameController: TextEditingController(),
               ),
               AppTheme.height(6),
               CustomTextField(
                 hintText: "Password*",
+                style: AppTheme.heading3,
                 icon: CupertinoIcons.lock_fill,
                 isObscure: true,
                 validator: (v) {},

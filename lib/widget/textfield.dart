@@ -14,6 +14,7 @@ class CustomTextField extends StatelessWidget {
       this.suffix,
       this.maxLines = 1,
       this.minLines = 1,
+      required this.style,
       this.maxLength,
       required this.validator,
       this.isObscure = false,
@@ -24,7 +25,7 @@ class CustomTextField extends StatelessWidget {
   final bool isObscure;
   final IconData icon;
   final int maxLines, minLines;
-
+  final TextStyle style;
   final int? maxLength;
   final TextInputType keyboardType;
   final Widget? suffix;
@@ -33,7 +34,7 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       autovalidateMode: AutovalidateMode.onUserInteraction,
-      style: AppTheme.heading3,
+      style: style,
       obscureText: isObscure,
       controller: nameController,
       minLines: minLines,
@@ -57,7 +58,7 @@ class CustomTextField extends StatelessWidget {
             ),
           ),
           hintText: hintText,
-          hintStyle: AppTheme.heading3.copyWith(color: AppTheme.lightText),
+          hintStyle: style.copyWith(color: AppTheme.lightText),
           counterStyle: AppTheme.smallText,
           labelStyle: AppTheme.smallText,
           enabledBorder: OutlineInputBorder(
